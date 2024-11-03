@@ -72,9 +72,11 @@
   color: var(--display-text);
   text-align: right;
   font-size: 32px;
+  min-height: 32px;
   padding: 10px;
   margin: 10px auto;
   border-radius: 8px;
+  overflow: auto;
   transition: background-color 0.3s;
 }
 
@@ -121,6 +123,10 @@
   box-shadow: inset 0 -4px 0 var(--equals-shadow);
 }
 
+.calc-button:disabled {
+  background-color: var(--calc-hover);
+}
+
 .calc-button:hover {
   background-color: var(--calc-hover);
 }
@@ -129,7 +135,15 @@
   background-color: var(--key-hover);
 }
 
+.del-button:disabled {
+  background-color: var(--key-hover);
+}
+
 .equals-button:hover {
+  background-color: var(--equals-hover);
+}
+
+.equals-button:disabled {
   background-color: var(--equals-hover);
 }
 
@@ -154,6 +168,7 @@
 
   .display-calculation {
     font-size: 26px;
+    min-height: 26px;
   }
 
   .input-container div {
