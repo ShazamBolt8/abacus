@@ -1,0 +1,166 @@
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 360px;
+}
+
+.top-container {
+  color: var(--top-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc {
+  padding-top: 16px;
+  font-size: 30px;
+}
+
+.theme-text {
+  padding-top: 16px;
+  margin-right: 16px;
+  font-size: 10px;
+}
+
+.top-right-container {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.theme-container {
+  width: 50px;
+}
+
+.theme-choice-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--toggle-bg);
+  width: 100%;
+  height: 24px;
+  border-radius: 12px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--equals-bg);
+  transition: background-color 0.3s;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.display-calculation {
+  background-color: var(--screen-bg);
+  color: var(--display-text);
+  text-align: right;
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.input-container {
+  background-color: var(--keypad-bg);
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.input-container div {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.input-container button {
+  font-family: 'League Spartan', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.calc-button {
+  background-color: var(--calc-bg);
+  color: var(--calc-text);
+  box-shadow: inset 0 -4px 0 var(--calc-shadow);
+}
+
+.del-button, .reset-button {
+  background-color: var(--key-bg);
+  color: var(--del-text);
+  box-shadow: inset 0 -4px 0 var(--key-shadow);
+}
+
+.equals-button {
+  background-color: var(--equals-bg);
+  color: var(--equals-text);
+  box-shadow: inset 0 -4px 0 var(--equals-shadow);
+}
+
+.calc-button:hover {
+  background-color: var(--calc-hover);
+}
+
+.del-button:hover, .reset-button:hover {
+  background-color: var(--key-hover);
+}
+
+.equals-button:hover {
+  background-color: var(--equals-hover);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+  body {
+    min-width: 350px;
+  }
+  
+  .calculator-container {
+    max-width: unset;
+    margin: 50px 30px;
+  }
+
+  .display-calculation {
+    font-size: 26px;
+  }
+
+  .input-container div {
+   gap: 16px;
+  }
+
+  .input-container button {
+    font-size: 16px;
+  }
+}

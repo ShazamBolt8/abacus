@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Abacus</title>
+</head>
+<body>
+  <div class="calculator-container">
+    <header class="top-container">
+      <div class="calc">Abacus</div>
+      <div class="top-right-container">
+        <div class="theme-text">Theme</div>
+        <div class="theme-container">
+          <div class="theme-choice-container">
+            <div class="theme-choice">1</div>
+            <div class="theme-choice">2</div>
+            <div class="theme-choice">3</div>
+          </div>
+          <label class="theme-switcher">
+            <input class="slider" id="range" type="range" min="1" max="3" step="1" value="1">
+          </label>
+        </div>
+      </div>
+    </header>
+  
+    <main>
+      <div class="display-calculation"></div>
+      <div class="input-container">
+        <div>
+          <button class="calc-button">7</button>
+          <button class="calc-button">8</button>
+          <button class="calc-button">9</button>
+          <button class="del-button">del</button>
+        </div>
+        
+        <div>
+          <button class="calc-button">4</button>
+          <button class="calc-button">5</button>
+          <button class="calc-button">6</button>
+          <button class="calc-button">+</button>
+        </div>
+        
+        <div>
+          <button class="calc-button">1</button>
+          <button class="calc-button">2</button>
+          <button class="calc-button">3</button>
+          <button class="calc-button">-</button>
+        </div>
+        
+        <div>
+          <button class="calc-button">.</button>
+          <button class="calc-button">0</button>
+          <button class="calc-button">/</button>
+          <button class="calc-button">&times;</button>
+        </div>
+
+        <div>
+          <button class="reset-button">reset</button>
+          <button class="equals-button">=</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  
+  <script type="module" src="scripts/calculation.js"></script>
+</body>
+</html>

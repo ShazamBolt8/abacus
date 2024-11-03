@@ -1,0 +1,90 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: var(--main-bg);
+  transition: background-color 0.3s;
+}
+
+.theme1 {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  --key-bg: hsl(225, 21%, 49%);
+  --key-hover: hsl(225, 21%, 80%);
+  --key-shadow: hsl(224, 28%, 35%);
+
+  --equals-bg: hsl(6, 63%, 50%);
+  --equals-hover: hsl(6, 63%, 60%);
+  --equals-shadow: hsl(6, 70%, 34%);
+
+  --calc-bg: hsl(30, 25%, 89%);
+  --calc-hover: hsl(30, 25%, 100%);
+  --calc-shadow: hsl(28, 16%, 65%);
+
+  --text-style1: hsl(221, 14%, 31%);
+  --text-style2: hsl(0, 0%, 100%);
+
+  --top-text: var(--text-style2);
+  --display-text: var(--text-style2);
+  --calc-text: var(--text-style1);
+  --del-text: var(--text-style2);
+  --equals-text: var(--text-style2);
+}
+
+.theme2 {
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --keypad-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  --key-bg: hsl(185, 42%, 37%);
+  --key-hover: hsl(185, 42%, 60%);
+  --key-shadow: hsl(185, 58%, 25%);
+
+  --equals-bg: hsl(25, 98%, 40%);
+  --equals-hover: hsl(25, 98%, 60%);
+  --equals-shadow: hsl(25, 99%, 27%);
+
+  --calc-bg: hsl(45, 7%, 89%);
+  --calc-hover: hsl(45, 7%, 100%);
+  --calc-shadow: hsl(35, 11%, 61%);
+
+  --text-style1: hsl(60, 10%, 19%);
+  --text-style2: hsl(0, 0%, 100%);
+
+  --top-text: var(--text-style1);
+  --display-text: var(--text-style1);
+  --calc-text: var(--text-style1);
+  --del-text: var(--text-style2);
+  --equals-text: var(--text-style2);
+}
+
+.theme3 {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --keypad-bg:hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  --key-bg: hsl(281, 89%, 26%);
+  --key-hover: hsl(281, 89%, 60%);
+  --key-shadow: hsl(285, 91%, 52%);
+
+  --equals-bg: hsl(176, 100%, 44%);
+  --equals-hover: hsl(176, 100%, 60%);
+  --equals-shadow: hsl(177, 92%, 70%);
+
+  --calc-bg: hsl(268, 47%, 21%);
+  --calc-hover: hsl(268, 47%, 60%);
+  --calc-shadow: hsl(290, 70%, 36%);
+
+  --text-style1: hsl(198, 20%, 13%);
+  --text-style2: hsl(52, 100%, 62%);
+  --text-style3: hsl(0, 0%, 100%);
+
+  --top-text: var(--text-style2);
+  --display-text: var(--text-style2);
+  --calc-text: var(--text-style2);
+  --del-text: var(--text-style3);
+  --equals-text: var(--text-style1);
+}
